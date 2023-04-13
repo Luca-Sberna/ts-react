@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+#### Oggi creerai un sito di notizie: **Spaceflight**, usando TypeScript.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Soddisfa le richieste e cerca di implementare i tipi e le interfacce al meglio che puoi.
 
-## Available Scripts
+### 📃 API Docs:
 
-In the project directory, you can run:
+Puoi trovare l’intera documentazione qui –> [LINK](https://api.spaceflightnewsapi.net/v4/documentation/)
 
-### `npm start`
+L’endpoint per ottenere la lista di articoli sarà così:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+https://api.spaceflightnewsapi.net/v4/articles
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usa la proprietà `id` di ogni rotta per cui vuoi ricevere informazioni
 
-### `npm test`
+```
+https://api.spaceflightnewsapi.net/v4/articles/:id
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### TASKS:
 
-### `npm run build`
+- Implementa una bella pagina principale per visualizzare gli articoli delle API; ogni articolo dovrà essere visualizzato da un componente e dovrà mostrare i dettagli come titolo, data di pubblicazione, immagine di copertina ecc…
+- Cliccare su un articolo dovrebbe portare l’utente alla pagina dettaglio, in cui verrà fatto il fetch dei dati di un particolare articolo. Mostra in questa pagina ogni informazione che puoi ottenere al riguardo.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Suggerimenti:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Come al solito separa l’applicazione in componenti riutilizzabili
+- Implementa interfacce per prop e stato per ogni componente, quando necessario
+- Implementa un’interfaccia solo per il risultato della chiamata API
+- Salta l’approccio Redux e fai il fetch diretto dei dati nel componente e salva il risultato nello stato locale
